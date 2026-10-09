@@ -1,9 +1,15 @@
-// ПЗ №4. Дополните код.
-const studentName = 'Ваше имя';
-const courseName = 'Основы веб-разработки';
-let completedTasks = 0;
-const totalTasks = 10;
+let completedTasks=6;
+let totalTasks=10;
+let remainingTasks = totalTasks - completedTasks;
+let completionPercentage = (completedTasks / totalTasks) * 100;
 
-// TODO: вычислите remainingTasks и progress.
-// TODO: выведите результаты в console.log().
-// TODO: добавьте if ... else.
+console.log('Илья', studentName);
+console.log('Веб-разработка', courseName);
+console.log('Оставшиеся задания:', remainingTasks);
+console.log('Процент выполнения:', completionPercentage + '%');
+
+if (completedTasks === totalTasks) {
+    console.log('Спринт завершён');
+} else {
+    console.log('Продолжайте работу');
+}
